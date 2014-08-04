@@ -1,0 +1,48 @@
+#faq {
+	padding: 16px 22px 16px 22px;
+}
+
+#faq h1 {
+	color: #444;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: arial;
+}
+
+#faq ul {
+	padding: 0px 16px;
+}
+
+#faq li {
+	margin-top: 10px;
+	background: #eee;
+	border-radius: 7px;
+	padding: 10px;
+}
+
+#faq li:hover {
+	background: #ddd;
+}
+
+#faq li a {
+	color: #444;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 14px;
+	text-shadow: 1px 1px 0px #d6d6d6;
+}
+
+#faq li:hover a {
+	text-shadow: 1px 1px 0px #d6d6d6;
+}
+
+#faq li div {
+	color: #444;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+#faq li:hover div {
+	
+}

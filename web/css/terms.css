@@ -1,0 +1,14 @@
+#terms {
+	padding: 16px 22px 0px 22px;
+}
+
+#terms h1 {
+	color: #444;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: arial;
+}
+
+#terms * {
+	color: #444;
+}

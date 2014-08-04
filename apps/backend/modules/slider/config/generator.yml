@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Slider
+    theme:                 stagAdmin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          slider
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   nothing
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        object_actions:
+          Monter:    ~
+          Descendre: ~
+          Premier:   ~
+          Dernier:   ~
+          Deactivate: ~
+          Activate:  ~
+          _edit:     { label: Editer }
+          _delete:   { label: Supprimer }
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

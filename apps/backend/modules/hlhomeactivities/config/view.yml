@@ -1,0 +1,5 @@
+all:
+  javascripts: [ckeditor/adapters/jquery.js]
+  
+getActivitiesSuccess:
+  has_layout: false

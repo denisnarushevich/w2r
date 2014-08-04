@@ -1,0 +1,212 @@
+001323445127001323441527C:13:"sfWebResponse":7317:{a:11:{i:0;s:6542:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="google-site-verification" content="TgP7FDbLs74k8_bBTyLazC2cR1VnwPEdd-bwFekr4Kg" />
+		<meta name="author" lang="en" content="Denis Narushevich, Rainmaker Ltd." />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/common.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/homepage.css" />
+    <script type="text/javascript" src="/sfJqueryReloadedPlugin/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="/js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="/js/menu_animation.js"></script>
+<script type="text/javascript" src="/js/slider.js"></script>
+    <script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-24660831-1']);
+			_gaq.push(['_setDomainName', 'none']);
+			_gaq.push(['_setAllowLinker', true]);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+  </head>
+  <body>
+		<div id="wrap">	
+    <!--Header Start--> 
+<div id="headerContainer">
+
+	<div id="topBar">
+					<a href="/register">S'inscrire</a>
+			<div class="separator"></div>
+			<a href="/login">Log in</a>
+			</div>			
+
+	<div id="header">
+		<a href="/fr/Accueil.html" class="logo"></a>
+
+		<div class="languages">
+								<a class="flag fr active" href="/change/langue/fr"><div>France</div></a>
+								<a class="flag gb " href="/change/langue/gb"><div>England</div></a>
+								<a class="flag ru " href="/change/langue/ru"><div>Russia</div></a>
+								<a class="flag lv " href="/change/langue/lv"><div>Latvia</div></a>
+								<a class="flag es " href="/change/langue/es"><div>Spain</div></a>
+					</div>
+
+		<!--Cart start--> 	
+<script type="text/javascript">
+		var single = 'Activité';
+		var multi = 'activities';
+</script>
+
+<div id="checkoutBlock">
+	<div class="nmbrActivity" id="numberAct">0</div>
+	<div class="text">
+		<span class="activityTxt" id="numberActTxt">Activité</span>
+		<span class="inUrPlanner">dans le panier</span>
+	</div>
+	<a href="/fr/checkout.html" title="Checkout" class="button" >Checkout</a>
+</div>
+<!--Cart end--> 
+	</div>
+
+</div>
+<!--Header End-->     <!--Menu Start--> 
+<div id="mainMenu">
+			
+	<a class="red button" href="/fr/Accueil.html" title="Item menu">
+		<div class="container">
+			<div class="body">
+				Accueil			</div>
+		</div>
+	</a>
+
+	<a class="purple button" href="/fr/offer.html" title="Item menu">
+		<div class="container">
+			<div class="body">
+				Nos offres			</div>
+		</div>
+	</a>
+
+	<a class="blue button" href="/fr/reviews.html" title="Item menu">
+		<div class="container">
+			<div class="body">
+				Customer reviews			</div>
+		</div>
+	</a>
+
+
+	<a class="green button" href="/fr/faq.html" title="Item menu">
+		<div class="container">
+			<div class="body">
+				F.A.Q.			</div>
+		</div>
+	</a>
+
+
+	<a class="orange button" href="/fr/terms.html" title="Item menu">
+		<div class="container">
+			<div class="body">
+				Termes & Conditions			</div>
+		</div>
+	</a>				
+
+
+	<a class="brown button" href="/fr/about.html" title="Item menu">
+		<div class="container">
+			<div class="body">
+				A propos			</div>
+		</div>
+	</a>				
+
+
+</div>
+<!--Menu End-->     <!--Slideshow Start--> 
+<div id="slider">
+	<div id="viewPort">
+		<div id="sliderFilm">
+							<a href="/fr/act/1+Day+Tour+X-treme.html" id="sliderPhoto_1" activity_name="Sport X-Treme - Winter X-Sports">
+					<img src="/uploads/sliders/saut_slider_slider.jpg" alt="Sport X-Treme"/>
+				</a>
+							<a href="/fr/act/1+Day+Tour.html" id="sliderPhoto_2" activity_name="Découvrez Riga - Hot Winter">
+					<img src="/uploads/sliders/big_individual_tour_slider_slider.jpg" alt="Découvrez Riga"/>
+				</a>
+					</div>
+	</div>
+	
+	<div class="redline">
+		<div class="controls">
+			<!-- inversed order because of float: right -->
+			<a id="sliderPhotoButton_4"></a>
+			<a id="sliderPhotoButton_3"></a>
+			<a id="sliderPhotoButton_2"></a>
+			<a id="sliderPhotoButton_1" class="active"></a>
+		</div>
+		
+		<div id="sliderActivityName" class="text">
+			Sport X-Treme - Winter X-Sports		</div>
+	</div>
+</div>
+<!--Slideshow End--> 
+<!-- Main Start --> 
+<div id="content">
+	<div id="highlightsContainer">
+					<div class="highlight">	
+				<a href="/fr/act/tir-riga.html">
+					<img src="/uploads/activity/frog1_act.jpg" alt="Frog Bobsled" />
+				</a>
+				<div class="price">€ 84</div>
+				<div class="text">
+					Séance de tir				</div>
+			</div>
+					<div class="highlight">	
+				<a href="/fr/act/karting-riga.html">
+					<img src="/uploads/activity/kvadra2_act.JPG" alt="Quads" />
+				</a>
+				<div class="price">€ 69</div>
+				<div class="text">
+					Pilote de Karting				</div>
+			</div>
+					<div class="highlight">	
+				<a href="/fr/act/nightclub-riga.html">
+					<img src="/uploads/activity/strip_act.jpg" alt="NightClub " />
+				</a>
+				<div class="price">€ 33</div>
+				<div class="text">
+					                      Soirée                     VIP				</div>
+			</div>
+			</div>
+</div>
+<!-- Main End -->
+    <!--Footer Start--> 
+<div id="footer">
+
+	<div class="block">
+		<div class="big">
+			SIA Welcome2Riga<br/>
+			Riga, 73 Terbatas Street<br/>
+			00371 277 111 73<br/>
+			click@welcome2riga.lv<br/>
+		</div>		
+		<div class="small">
+			Copyright © 2011<br/>
+			<a href="http://www.welcome2riga.lv" target="_blank">http://www.welcome2riga.lv</a><br/>
+		</div>
+	</div>
+	<div class="pod2"></div>
+
+	<div class="block">
+		<div class="title">More information</div>
+		<a href="/fr/about.html" class="bigbutton">
+			Contact us using our form by clicking here...
+		</a>
+	</div>
+
+	<div class="pod2"></div>
+	<div class="block networks">
+		<div class="title">Follow us on</div>
+		<a class="facebook" target="_blank" href="http://www.facebook.com/pages/Welcome2Riga/176552039080083?sk=wall"></a>
+		<a class="twitter" target="_blank" href="http://twitter.com/Welcome2Riga"></a>
+		<a class="linkedin" target="_blank" href=""></a>
+	</div>
+
+</div>
+<!--Footer End--> 		</div>
+  </body>
+</html>
+";i:1;i:200;i:2;s:2:"OK";i:3;a:5:{s:13:"http_protocol";s:8:"HTTP/1.1";s:7:"logging";s:0:"";s:7:"charset";s:5:"utf-8";s:17:"send_http_headers";b:1;s:12:"content_type";s:24:"text/html; charset=utf-8";}i:4;b:0;i:5;a:3:{s:12:"Content-Type";s:24:"text/html; charset=utf-8";s:7:"Expires";s:29:"Fri, 09 Dec 2011 15:38:47 GMT";s:13:"Cache-Control";s:12:"max-age=3600";}i:6;a:0:{}i:7;a:1:{s:12:"Content-Type";s:24:"text/html; charset=utf-8";}i:8;a:3:{s:5:"first";a:0:{}s:0:"";a:2:{s:10:"common.css";a:0:{}s:12:"homepage.css";a:0:{}}s:4:"last";a:0:{}}i:9;a:3:{s:5:"first";a:1:{s:46:"/sfJqueryReloadedPlugin/js/jquery-1.3.2.min.js";a:0:{}}s:0:"";a:3:{s:19:"jquery-1.5.2.min.js";a:0:{}s:17:"menu_animation.js";a:0:{}s:9:"slider.js";a:0:{}}s:4:"last";a:0:{}}i:10;a:0:{}}}

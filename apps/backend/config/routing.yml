@@ -1,0 +1,258 @@
+partners:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Partners
+    module:               partners
+    prefix_path:          /partners
+    column:               id
+    with_wildcard_routes: true
+
+bonus_partner:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                BonusPartner
+    module:               bonus
+    prefix_path:          /bonus
+    column:               id
+    with_wildcard_routes: true
+
+review:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Review
+    module:               reviews
+    prefix_path:          /reviews
+    column:               id
+    with_wildcard_routes: true
+
+contact:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Contact
+    module:               contacts
+    prefix_path:          /contacts
+    column:               id
+    with_wildcard_routes: true
+
+slider:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Slider
+    module:               slider
+    prefix_path:          /slider
+    column:               id
+    with_wildcard_routes: true
+
+lexique:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Lexique
+    module:               faq
+    prefix_path:          /faq
+    column:               id
+    with_wildcard_routes: true
+
+comment:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Comment
+    module:               comments
+    prefix_path:          /comments
+    column:               id
+    with_wildcard_routes: true
+
+comments:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Comment
+    module:               comments
+    prefix_path:          /comments
+    column:               id
+    with_wildcard_routes: true
+
+#informations:
+#  class: sfDoctrineRouteCollection
+#  options:
+#    model:                Informations
+#    module:               infossites
+#    prefix_path:          /infossites
+#    column:               id
+#    with_wildcard_routes: true
+
+booking:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Booking
+    module:               admin_booking
+    prefix_path:          /client/booking
+    column:               id
+    with_wildcard_routes: true
+
+planner_admin_planner:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Planner
+    module:               admin_planner
+    prefix_path:          /client/planner
+    column:               id
+    with_wildcard_routes: true
+
+card:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Card
+    module:               admin_card
+    prefix_path:          /client/card
+    column:               id
+    with_wildcard_routes: true
+
+client:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                User
+    module:               admin_client
+    prefix_path:          /client/customers
+    column:               id
+    with_wildcard_routes: true
+
+extra:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Extra
+    module:               admin_extra
+    prefix_path:          /admin/extra
+    column:               id
+    with_wildcard_routes: true
+
+extra_category:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ExtraCategory
+    module:               admin_extra_category
+    prefix_path:          /admin/extra/category
+    column:               id
+    with_wildcard_routes: true
+
+activity_price:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ActivityPrice
+    module:               admin_activity_price
+    prefix_path:          /admin/activity/price
+    column:               id
+    with_wildcard_routes: true
+
+activity:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Activity
+    module:               admin_activity
+    prefix_path:          /admin/activity
+    column:               id
+    with_wildcard_routes: true
+    sf_method: [get,post]
+
+activity_object:
+  class:                  sfDoctrineRoute
+  url:                    /admin/activity/:id/:action.:sf_format
+  options:
+    model:                Activity
+    module:               admin_activity
+    type:                 object
+  param:   
+    module:               admin_activity
+    sf_format:            'html'
+  requirements:
+    id: \d+
+    sf_method: [get,post]
+
+activity_category:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ActivityCategory
+    module:               admin_category
+    prefix_path:          /admin/category
+    column:               id
+    with_wildcard_routes: true
+
+money:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Money
+    module:               money
+    prefix_path:          /text/money
+    column:               id
+    with_wildcard_routes: true
+
+text_langues:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Langues
+    module:               text_langues
+    prefix_path:          /text/langues
+    column:               id
+    with_wildcard_routes: true
+
+text_trans:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                transUnit
+    module:               text_trans
+    prefix_path:          /text/trans
+    column:               msg_id
+    with_wildcard_routes: true
+
+planner_view:
+  url:  /planner/view/:id
+  options: { model: Planner, type: object, segment_separators:   [/, ., -, _] }
+  param: { module: planner, action: view }
+  requirements: { id: '^[0-9]+$' }
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+###############################################################################
+### Front modules
+###############################################################################
+
+homepage:
+  url:   /
+  param: { module: sfAdminDash, action: dashboard }
+
+###############################################################################
+## Security
+###############################################################################
+
+## Signin
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+
+## Signout
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+###############################################################################
+## Admin Modules
+###############################################################################
+
+## Infos Site, menu, about us, ...
+menu:
+  url: /menu
+  param: { module: infossites, action: menu }
+
+about:
+  url: /about
+  param: { module: infossites, action: about }
+
+terms:
+  url: /terms
+  param: { module: infossites, action: terms }
+  
+informations:
+  url: /infos
+  param: { module: infossites, action: index }
+
+# generic rules
+default:
+  url:   /:module/:action/*

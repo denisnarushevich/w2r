@@ -1,0 +1,11 @@
+indexSuccess:
+  javascripts: [jquery.lightbox-0.5.min.js]
+  stylesheets: [jquery.lightbox-0.5.css]
+
+newSuccess:
+  layout: layout-popup
+editSuccess:
+  layout: layout-popup
+deleteSuccess:
+  layout: layout-popup
+

@@ -1,0 +1,57 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/04-Settings
+
+prod:
+  .settings:
+    no_script_name:         true
+    logging_enabled:        false
+    cache:                  true
+
+cache:
+  .settings:
+    error_reporting:        <?php echo (E_ALL | E_STRICT) . "\n" ?>
+    web_debug:              true
+    cache:                  true
+    no_script_name:         false
+    etag:                   false
+
+dev:
+  .settings:
+    error_reporting:        <?php echo (E_ALL | E_STRICT) . "\n" ?>
+    web_debug:              true
+    cache:                  false
+    no_script_name:         false
+    etag:                   false
+
+test:
+  .settings:
+    error_reporting:        <?php echo ((E_ALL | E_STRICT) ^ E_NOTICE)."\n" ?>
+    cache:                  false
+    web_debug:              false
+    no_script_name:         false
+    etag:                   false
+
+all:
+  .settings:
+    # Form security secret (CSRF protection)
+    csrf_secret:            c29a54af22ea2f65432f1a36f84508a2060e744b
+
+    # Output escaping settings
+    escaping_strategy:      true
+    escaping_method:        ESC_SPECIALCHARS
+
+    # Enable the database manager
+    use_database:           true
+    charset:                utf-8
+    i18n:                   true
+    standard_helpers:       [Partial, Cache, Text, I18N, jQuery]
+    default_culture:        en
+    enabled_modules:        [baseAuth]
+
+# User management 'security'
+
+    login_module:           baseAuth
+    login_action:           signin
+
+    secure_module:          baseAuth
+    secure_action:          secure

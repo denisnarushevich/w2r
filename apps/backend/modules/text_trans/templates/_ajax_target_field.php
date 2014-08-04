@@ -1,0 +1,2 @@
+<input type="text" name="<?php echo 'unit_trans_target_' . $trans_unit->msg_id ?>" value="<?php echo $trans_unit->target ?>">
+<input type="hidden" name="<?php echo 'unit_trans_id_' . $trans_unit->msg_id ?>" value="<?php echo $trans_unit->msg_id ?>">

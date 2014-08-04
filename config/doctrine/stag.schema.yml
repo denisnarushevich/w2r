@@ -1,0 +1,499 @@
+options:
+  type: INNODB
+  collate: utf8_general_ci
+  charset: utf8
+
+## Activity part
+
+ActivityCategory:
+  actAs:
+    I18n:
+      fields:       [name, description, visible]
+      actAs:
+        Sluggable:  { fields: [name], uniqueBy: [lang, name] }
+  tableName:        activity_category
+  columns:
+    id:             { type: integer, primary: true, autoincrement: true }
+    image:          { type: string(255) }
+    name:           { type: string(255), notnull: true }
+    description:    { type: text, notnull: true }
+    visible:        { type: boolean, default: true }
+    del:            { type: boolean, default: false }
+  relations:
+    Activity:
+      class:        Activity
+      type:         many
+      local:        id
+      foreign:      id_category
+      foreignAlias: ActivityCategory
+      alias:        Activity
+
+Activity:
+  actAs:
+    I18n:
+      fields:       [name, description, visible, summary]
+      actAs:
+        Sluggable:  { fields: [name], uniqueBy: [lang, name] }
+  tableName:        activity
+  columns:
+    id:             { type: integer, primary: true, autoincrement: true }
+    id_category:    { type: integer, notnull: true }
+    image:          { type: string(255) }
+    default_price:	{ type: integer, notnull: true }
+    stars:          { type: integer, notnull: true }
+    name:           { type: string(255), notnull: true }
+    description:    { type: text, notnull: true }
+    summary:        { type: text }
+    visible:        { type: boolean, default: true }
+    firstname:      { type: string(255) }
+    lastname:       { type: string(255) }
+    phone:          { type: string(14) }
+    email:          { type: string(255) }
+    address:        { type: string(255) }
+    del:            { type: boolean, default: false }
+  relations:
+    ActivityPrice:
+      class:        ActivityPrice
+      type:         many
+      local:        id
+      foreign:      id_activity
+      foreignAlias: Activity
+      alias:        ActivityPrice
+    Comments:
+      class:        Comment
+      type:         many
+      local:        id
+      foreign:      id_activity
+      foreignAlias: Activity
+      alias:        Comments
+
+ActivityPrice:
+  actAs:
+    I18n:
+      fields:       [price]
+  tableName:        activity_price
+  columns:
+    id:             { type: integer, primary: true, autoincrement: true }
+    id_activity:    { type: integer, notnull: true }
+    price:          { type: integer, notnull: true, unsigned: true }
+    date_begin:     { type: date }
+    date_end:       { type: date }
+
+Comment:
+  tableName:        comment
+  columns:
+    description:    { type: string(65536) }
+    id_activity:    { type: integer, notnull: true }
+    id_client:      { type: integer, notnull: true }
+    valide:         { type: boolean, default: false }
+    del:            { type: boolean, default: false }
+  relations:
+    User:
+      class:        User
+      type:         one
+      foreignType:  many
+      local:        id_client
+      foreign:      id
+      alias:        User
+      foreignAlias: Comments
+##
+
+ExtraCategory:
+  actAs:
+    I18n:
+      fields:       [name, description, visible]
+      actAs:
+        Sluggable:  { fields: [name], uniqueBy: [lang, name] }
+  tableName:        extra_category
+  columns:
+    id:             { type: integer, primary: true, autoincrement: true }
+    name:           { type: string(255), notnull: true }
+    description:    { type: text, notnull: true }
+    del:            { type: boolean, default: false }
+
+Extra:
+  actAs:
+    I18n:
+      fields:       [name, description, price]
+      actAs:
+        Sluggable:  { fields: [name], uniqueBy: [lang, name] }
+  tableName:        extra
+  columns:
+    id:             { type: integer, primary: true, autoincrement: true }
+    id_category:    { type: integer }
+    name:           { type: string(255), notnull: true }
+    description:    { type: text, notnull: true }
+    price:          { type: integer, notnull: true, unsigned: true }
+    del:            { type: boolean, default: false }
+  relations:
+    ExtraCategory:
+      class:        ExtraCategory
+      local:        id_category
+      foreign:      id
+
+ExtraActivity:
+  tableName:        extra_activity
+  columns:
+    id:             { type: integer, primary: true, autoincrement: true }
+    id_activity:    { type: integer }
+    id_extra:       { type: integer }
+  relations:
+    Extra:
+      class:        Extra
+      local:        id_extra
+      foreign:      id
+    Activity:
+      class:        Activity
+      local:        id_activity
+      foreign:      id
+
+ExtraReserved:
+  tableName:        extra_reserved
+  columns:
+    id:             { type: integer, primary: true, autoincrement: true }
+    id_extra:       { type: integer, notnull: true }
+    id_booking:   	{ type: integer, notnull: true }
+    id_activity:   	{ type: integer, notnull: true }
+    log_price:      { type: integer, notnull: true, unsigned: true}
+  relations:
+    Extra:
+      class:        Extra
+      local:        id_extra
+      foreign:      id
+    Booking:
+      class:        Booking
+      local:        id_booking
+      foreign:      id
+      cascade:      [delete]
+    Activity:
+      class:        Activity
+      local:        id_activity
+      foreign:      id
+
+## User Part
+
+#Client:
+#  tableName:        client
+#  columns:
+#    id:             { type: integer, primary: true, autoincrement: true }
+#    name:           { type: string(255), notnull: true }
+#    surname:        { type: string(255), notnull: true }
+#    email:          { type: varchar(255) }
+#    mdp:            { type: varchar(255) }
+#    hash:           { type: varchar(255) }
+#    phone:          { type: varchar(14), notnull: true }
+#  relations:
+#    Comment:
+#      class:        Comment
+#      type:         many
+#      local:        id
+#      foreign:      id_client
+#      alias:        Comments
+#      foreignAlias: Client
+
+Card:
+  tableName:        card
+  columns:
+    id:             { type: integer, primary: true, autoincrement: true }
+    id_client:      { type: integer, notnull: true }
+    card_name:      { type: string(255), notnull: true }
+    card_numero:    { type: string(255), notnull: true }
+    valid_to:       { type: date, notnull: true }
+  relations:
+    User:
+      class:        User
+      local:        id_client
+      foreign:      id
+
+## Planner part
+
+Planner:
+  tableName:        planner
+  columns:
+    id:             { type: integer, primary: true, autoincrement: true }
+    id_client:      { type: integer, notnull: true }
+    id_employee:    { type: integer }
+    date_begin:     { type: date, notnull: true }
+    date_end:       { type: date, notnull: true }
+    submit_date:    { type: date, notnull: true }
+    contact_name:   { type: string }
+    contact_surname: { type: string }
+    other_info:     { type: text }
+    status:         { type: enum, values: ['New', 'InProgress', 'Closed'], notnull: true }
+    log_price:      { type: integer, notnull: true, unsigned: true }
+    bonus_code:     { type: string(255) }
+  relations:
+    User:
+      class:        User
+      local:        id_client
+      foreign:      id
+    Employee:
+      class:        sfGuardUser
+      local:        id_employee
+      foreign:      id
+      type:         one
+      foreignType:  many
+
+Booking:
+  tableName:        booking
+  columns:
+    id:             { type: integer, primary: true, autoincrement: true }
+    id_client:      { type: integer, notnull: true }
+    id_activity:    { type: integer, notnull: true }
+    id_planner:     { type: integer, notnull: true }
+    date_begin:     { type: date, notnull: true }
+    date_end:       { type: date, notnull: true }
+    other_info:     { type: text }
+    nb_persons:     { type: integer, notnull: true }
+    status:         { type: enum, values: ['New', 'InProgress', 'Closed'], notnull: true }
+    log_price:      { type: integer, notnull: true, unsigned: true }
+  relations:
+    User:
+      class:        User
+      local:        id_client
+      foreign:      id
+      type:         one
+      foreignType:  many
+    Activity:
+      class:        Activity
+      local:        id_activity
+      foreign:      id
+      type:         one
+      foreignType:  one
+    Planner:
+      class:        Planner
+      local:        id_planner
+      foreign:      id
+      type:         one
+      foreignType:  many
+
+## Image Part
+
+Image:
+  tableName:        image
+  columns:
+    id:             { type: integer, primary: true, autoincrement: true }
+    id_object:      { type: integer, notnull: true }
+    type_object:    { type: string(255), notnull: true }
+    path:           { type: string(255), notnull: true }
+
+## Video Part
+
+Video:
+  tableName:        video
+  columns:
+    id:             { type: integer, primary: true, autoincrement: true }
+    id_object:      { type: integer, notnull: true }
+    type_object:    { type: string(255), notnull: true }
+    content:        { type: string(65355), notnull: true }
+
+## Slide for Activity Part
+
+SlidesActivity:
+  tableName:        slides_activity
+  columns:
+    id:             { type: integer, primary: true, autoincrement: true }
+    id_object:      { type: integer, notnull: true }
+    type_object:    { type: string(255), notnull: true }
+    path:           { type: string(255), notnull: true }
+    position:       { type: integer, default: 0 }
+    active:         { type: boolean, default: false }
+
+## Langue management
+
+Langues:
+  tableName:        langues
+  columns:
+    id:             { type: integer, primary: true, autoincrement: true }
+    iso:            { type: string(255), notnull: true, unique: true }
+    country:        { type: string(255), notnull: true, unique: true }
+  relations:
+    Money:
+      class:        Money
+      type:         many
+      refClass:     LanguesMoney
+    
+# Money status
+Money:
+  tableName:        money
+  columns:
+    money_name:     { type: string(255), notnull: true }
+    money_curr:     { type: string(255), notnull: true }
+  relations:
+    Langues:
+      class:        Langues
+      type:         many
+      refClass:     LanguesMoney
+      
+LanguesMoney:
+  tableName:        langues_money
+  columns:
+    langues_id:     { type: integer, notnull: true }
+    money_id:       { type: integer, notnull: true }
+  relations:
+    Langues:
+      foreignAlias: LanguesMoney
+    Money:
+      foreignAlias: LanguesMoney
+
+## MultiLangues i18n
+
+Catalogue:
+  tableName:        catalogue
+  columns:
+    cat_id:
+      type:         integer
+      primary:      true
+      autoincrement: true
+    name:           string(100)
+    source_lang:    string(100)
+    target_lang:    string(100)
+    date_created:   integer
+    date_modified:  integer
+    author:         string(255)
+
+TransUnit:
+  tableName:        trans_unit
+  columns:
+    msg_id:
+      type:         integer
+      primary:      true
+      autoincrement: true
+    cat_id:         integer
+    id:             string(255)
+    source:         clob
+    target:         clob
+    comments:       clob
+    date_added:     integer
+    date_modified:  integer
+    author:         string(255)
+    translated:
+      type:         boolean
+      default:      0
+  relations:
+    Catalogue:
+      type:         one
+      foreignType:  many
+      local:        cat_id
+      foreign:      cat_id
+
+## Sites informations
+
+Informations:
+  actAs:
+    I18n:
+      fields:       [name, value]
+  tableName:        informations
+  columns:
+    name:           { type: string(65535) }
+    value:          { type: string(65535) }
+
+## Homepage
+
+HighlightActivity:
+  actAs:
+    I18n:
+      fields:       [title, title_blue, description, activity]
+  tableName:        highlight_activity
+  columns:
+    number:         { type: integer }
+    activity:       { type: integer }
+    title:          { type: string(255) }
+    title_blue:     { type: string(255) }
+    description:    { type: string(65535) }
+
+## FAQ
+
+Lexique:
+  actAs:
+    I18n:
+      fields:       [name, value]
+  tableName:        lexique
+  columns:
+    id:             { type: integer, primary: true, notnull: true, autoincrement: true } 
+    name:           { type: string(255) }
+    value:          { type: string(65535) }
+
+## Slider
+
+Slider:
+  tableName:        slider
+  columns:
+    image:          { type: string(255), notnull: true }
+    id_activity:    { type: integer, notnull: true }
+    title:          { type: string(255), notnull: true }
+    position:       { type: integer, default: 0 }
+    active:         { type: boolean, default: false }
+    lang:           { type: integer, notnull: true }
+  relations:
+    Activity:
+      type:         one
+      foreignType:  many
+      local:        id_activity
+      foreign:      id
+    Langues:
+      type:         many
+      foreignType:  one
+      local:        lang
+      foreign:      id
+      
+## Contact form
+Contact:
+  tableName:        contact
+  columns:
+    email:          { type: string(255), notnull: true }
+    name:           { type: string(255), notnull: true }
+    surname:        { type: string(255), notnull: true }
+    comment:        { type: string(65535), notnull: true }
+    status:         { type: enum, values: ['New', 'InProgress', 'Closed'], notnull: true }
+
+## Review Customers
+Review:
+  tableName:        review
+  columns:
+    id_client:      { type: integer, notnull: true }
+    description:    { type: string(63535), notnull: true }
+    image:          { type: string(255) }
+    country:        { type: string(255) }
+    valide:         { type: boolean, default: false }
+    del:            { type: boolean, default: false }
+  relations:
+    User:
+      class:        User
+      local:        id_client
+      foreign:      id
+      type:         one
+      foreignType:  many
+
+## Bonus code part
+
+BonusPartner:
+  actAs:
+    I18n:
+      fields:       [comment]
+  tableName:        bonuspartner
+  columns:
+    name:           { type: string(255), notnull: true }
+    comment:        { type: string(255), notnull: true }
+    value:          { type: string(255), notnull: true }
+    type:           { type: string(255), notnull: true }
+    id_partner:     { type: integer, notnull: true }
+    code:           { type: string(255), notnull: true }
+
+Partners:
+  tableName:        partners
+  columns:
+    name:           { type: string(255), notnull: true }
+    adress:         { type: string(255), notnull: true }
+    cp:             { type: string(255), notnull: true }
+    city:           { type: string(255), notnull: true }
+    country:        { type: string(255), notnull: true }
+    phone:          { type: string(255), notnull: true }
+    contact_name:   { type: string(255), notnull: true }
+  relations:
+    BonusPartners:
+      class:        BonusPartner
+      type:         many
+      foreignType:  one
+      foreign:      id_partner
+      local:        id

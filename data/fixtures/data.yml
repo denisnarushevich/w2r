@@ -1,0 +1,661 @@
+Catalogue:
+  Catalogue_1:
+    name: messages.fr
+    source_lang: en
+    target_lang: fr
+    date_created: null
+    date_modified: '1306497616'
+    author: null
+  Catalogue_2:
+    name: sf_admin.fr
+    source_lang: en
+    target_lang: fr
+    date_created: null
+    date_modified: '1306497506'
+    author: null
+  Catalogue_3:
+    name: admin.fr
+    source_lang: en
+    target_lang: fr
+    date_created: null
+    date_modified: '1306497548'
+    author: null
+Langues:
+  Langues_1:
+    iso: fr
+    country: France
+sfGuardUser:
+  sfGuardUser_1:
+    first_name: null
+    last_name: null
+    email_address: stephane@rainmaker.lv
+    username: stephane
+    algorithm: sha1
+    salt: 5886746a69926d6e50007b6b7b06cd30
+    password: 2f53a6983f934db533f06091295e0dfe50212317
+    is_active: true
+    is_super_admin: true
+    last_login: '2011-05-27 11:32:18'
+    created_at: '2011-05-25 17:38:34'
+    updated_at: '2011-05-27 11:32:18'
+TransUnit:
+  TransUnit_1:
+    Catalogue: Catalogue_3
+    id: '1'
+    source: Dashboard
+    target: Panel
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306496461'
+    author: stephane
+    translated: true
+  TransUnit_2:
+    Catalogue: Catalogue_3
+    id: '2'
+    source: Planner
+    target: 'Plannings créés'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306496509'
+    author: stephane
+    translated: true
+  TransUnit_3:
+    Catalogue: Catalogue_3
+    id: '3'
+    source: Comments
+    target: Commentaires
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306496450'
+    author: stephane
+    translated: true
+  TransUnit_4:
+    Catalogue: Catalogue_3
+    id: '4'
+    source: 'Contents management'
+    target: 'Gestion des contenus'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497315'
+    author: stephane
+    translated: true
+  TransUnit_5:
+    Catalogue: Catalogue_3
+    id: '5'
+    source: Categories
+    target: 'Catégories d''activités'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497319'
+    author: stephane
+    translated: true
+  TransUnit_6:
+    Catalogue: Catalogue_3
+    id: '6'
+    source: Activities
+    target: Activités
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497236'
+    author: stephane
+    translated: true
+  TransUnit_7:
+    Catalogue: Catalogue_3
+    id: '7'
+    source: 'Price Activities'
+    target: 'Prix des activités'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497243'
+    author: stephane
+    translated: true
+  TransUnit_8:
+    Catalogue: Catalogue_3
+    id: '8'
+    source: 'Extra Categories'
+    target: 'Catégories d''extra'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497256'
+    author: stephane
+    translated: true
+  TransUnit_9:
+    Catalogue: Catalogue_3
+    id: '9'
+    source: Extra
+    target: Extra
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497261'
+    author: stephane
+    translated: true
+  TransUnit_10:
+    Catalogue: Catalogue_3
+    id: '10'
+    source: Customers
+    target: Clients
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497264'
+    author: stephane
+    translated: true
+  TransUnit_11:
+    Catalogue: Catalogue_3
+    id: '11'
+    source: 'Homepage management'
+    target: 'Gestion de la page d''accueil'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497271'
+    author: stephane
+    translated: true
+  TransUnit_12:
+    Catalogue: Catalogue_3
+    id: '12'
+    source: Slider
+    target: Slider
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497275'
+    author: stephane
+    translated: true
+  TransUnit_13:
+    Catalogue: Catalogue_3
+    id: '13'
+    source: 'Highlight activities'
+    target: 'Activités mise en avant'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497286'
+    author: stephane
+    translated: true
+  TransUnit_14:
+    Catalogue: Catalogue_3
+    id: '14'
+    source: 'Footer highlight'
+    target: 'Pied de page mis en avant'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497295'
+    author: stephane
+    translated: true
+  TransUnit_15:
+    Catalogue: Catalogue_3
+    id: '15'
+    source: 'Footer video block'
+    target: 'Pied de page: vidéos'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497307'
+    author: stephane
+    translated: true
+  TransUnit_16:
+    Catalogue: Catalogue_3
+    id: '16'
+    source: 'Texts management'
+    target: 'Gestion des textes et langues'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497194'
+    author: stephane
+    translated: true
+  TransUnit_17:
+    Catalogue: Catalogue_3
+    id: '17'
+    source: 'Languages available'
+    target: 'Languages disponibles'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497170'
+    author: stephane
+    translated: true
+  TransUnit_18:
+    Catalogue: Catalogue_3
+    id: '18'
+    source: 'Languages translation'
+    target: Traductions
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497175'
+    author: stephane
+    translated: true
+  TransUnit_19:
+    Catalogue: Catalogue_3
+    id: '19'
+    source: 'Sites informations'
+    target: 'Informations du site'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497203'
+    author: stephane
+    translated: true
+  TransUnit_20:
+    Catalogue: Catalogue_1
+    id: '1'
+    source: 'XI18nTransUnit List'
+    target: 'Liste des traductions'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497211'
+    author: stephane
+    translated: true
+  TransUnit_21:
+    Catalogue: Catalogue_1
+    id: '2'
+    source: Cat
+    target: Catalogue
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497334'
+    author: stephane
+    translated: true
+  TransUnit_22:
+    Catalogue: Catalogue_1
+    id: '3'
+    source: Id
+    target: Id
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497337'
+    author: stephane
+    translated: true
+  TransUnit_23:
+    Catalogue: Catalogue_1
+    id: '4'
+    source: 'is empty'
+    target: Vide
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497345'
+    author: stephane
+    translated: true
+  TransUnit_24:
+    Catalogue: Catalogue_1
+    id: '5'
+    source: Source
+    target: 'Langue source'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497351'
+    author: stephane
+    translated: true
+  TransUnit_25:
+    Catalogue: Catalogue_1
+    id: '6'
+    source: Target
+    target: 'Langue de destination'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497355'
+    author: stephane
+    translated: true
+  TransUnit_26:
+    Catalogue: Catalogue_1
+    id: '7'
+    source: Comments
+    target: Commentaires
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497359'
+    author: stephane
+    translated: true
+  TransUnit_27:
+    Catalogue: Catalogue_1
+    id: '8'
+    source: 'Date added'
+    target: 'Date d''ajout'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497363'
+    author: stephane
+    translated: true
+  TransUnit_28:
+    Catalogue: Catalogue_1
+    id: '9'
+    source: 'Date modified'
+    target: 'Date de modification'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497367'
+    author: stephane
+    translated: true
+  TransUnit_29:
+    Catalogue: Catalogue_1
+    id: '10'
+    source: Author
+    target: Auteur
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497369'
+    author: stephane
+    translated: true
+  TransUnit_30:
+    Catalogue: Catalogue_1
+    id: '11'
+    source: Translated
+    target: Traduit
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497373'
+    author: stephane
+    translated: true
+  TransUnit_31:
+    Catalogue: Catalogue_1
+    id: '12'
+    source: 'yes or no'
+    target: 'Oui ou non'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497376'
+    author: stephane
+    translated: true
+  TransUnit_32:
+    Catalogue: Catalogue_1
+    id: '13'
+    source: yes
+    target: Oui
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497379'
+    author: stephane
+    translated: true
+  TransUnit_33:
+    Catalogue: Catalogue_1
+    id: '14'
+    source: no
+    target: Non
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497382'
+    author: stephane
+    translated: true
+  TransUnit_34:
+    Catalogue: Catalogue_2
+    id: '1'
+    source: Reset
+    target: 'Remise à zéro'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497427'
+    author: stephane
+    translated: true
+  TransUnit_35:
+    Catalogue: Catalogue_2
+    id: '2'
+    source: Filter
+    target: Filtre
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497393'
+    author: stephane
+    translated: true
+  TransUnit_36:
+    Catalogue: Catalogue_2
+    id: '3'
+    source: 'No result'
+    target: 'Aucun résultat'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497414'
+    author: stephane
+    translated: true
+  TransUnit_37:
+    Catalogue: Catalogue_2
+    id: '4'
+    source: 'Choose an action'
+    target: 'Choisissez une action'
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497406'
+    author: stephane
+    translated: true
+  TransUnit_38:
+    Catalogue: Catalogue_2
+    id: '5'
+    source: Delete
+    target: Suppression
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497431'
+    author: stephane
+    translated: true
+  TransUnit_39:
+    Catalogue: Catalogue_2
+    id: '6'
+    source: go
+    target: Exécuter
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497443'
+    author: stephane
+    translated: true
+  TransUnit_40:
+    Catalogue: Catalogue_2
+    id: '7'
+    source: New
+    target: Nouveau
+    comments: null
+    date_added: '1306494445'
+    date_modified: '1306497445'
+    author: stephane
+    translated: true
+  TransUnit_41:
+    Catalogue: Catalogue_1
+    id: '15'
+    source: Catalogue
+    target: Catalogue
+    comments: null
+    date_added: '1306494449'
+    date_modified: '1306497453'
+    author: stephane
+    translated: true
+  TransUnit_42:
+    Catalogue: Catalogue_1
+    id: '16'
+    source: 'Ajax target'
+    target: Destination
+    comments: null
+    date_added: '1306494449'
+    date_modified: '1306497459'
+    author: stephane
+    translated: true
+  TransUnit_43:
+    Catalogue: Catalogue_2
+    id: '8'
+    source: Actions
+    target: Actions
+    comments: null
+    date_added: '1306494449'
+    date_modified: '1306497462'
+    author: stephane
+    translated: true
+  TransUnit_44:
+    Catalogue: Catalogue_2
+    id: '9'
+    source: 'First page'
+    target: 'Première page'
+    comments: null
+    date_added: '1306494449'
+    date_modified: '1306497467'
+    author: stephane
+    translated: true
+  TransUnit_45:
+    Catalogue: Catalogue_2
+    id: '10'
+    source: 'Previous page'
+    target: 'Page précédente'
+    comments: null
+    date_added: '1306494449'
+    date_modified: '1306497473'
+    author: stephane
+    translated: true
+  TransUnit_46:
+    Catalogue: Catalogue_2
+    id: '11'
+    source: 'Next page'
+    target: 'Page suivante'
+    comments: null
+    date_added: '1306494449'
+    date_modified: '1306497476'
+    author: stephane
+    translated: true
+  TransUnit_47:
+    Catalogue: Catalogue_2
+    id: '12'
+    source: 'Last page'
+    target: 'Dernière page'
+    comments: null
+    date_added: '1306494449'
+    date_modified: '1306497488'
+    author: stephane
+    translated: true
+  TransUnit_48:
+    Catalogue: Catalogue_2
+    id: '13'
+    source: '[0] no result|[1] 1 result|(1,+Inf] %1% results'
+    target: null
+    comments: null
+    date_added: '1306494449'
+    date_modified: null
+    author: null
+    translated: false
+  TransUnit_49:
+    Catalogue: Catalogue_2
+    id: '14'
+    source: '(page %%page%%/%%nb_pages%%)'
+    target: null
+    comments: null
+    date_added: '1306494449'
+    date_modified: null
+    author: null
+    translated: false
+  TransUnit_50:
+    Catalogue: Catalogue_2
+    id: '15'
+    source: Edit
+    target: Edition
+    comments: null
+    date_added: '1306494449'
+    date_modified: '1306497491'
+    author: stephane
+    translated: true
+  TransUnit_51:
+    Catalogue: Catalogue_2
+    id: '16'
+    source: 'Are you sure?'
+    target: 'Etes-vous sur ?'
+    comments: null
+    date_added: '1306494449'
+    date_modified: '1306497501'
+    author: stephane
+    translated: true
+  TransUnit_52:
+    Catalogue: Catalogue_2
+    id: '17'
+    source: Checked
+    target: Coché
+    comments: null
+    date_added: '1306496452'
+    date_modified: '1306497506'
+    author: stephane
+    translated: true
+  TransUnit_53:
+    Catalogue: Catalogue_3
+    id: '20'
+    source: 'Last Planner'
+    target: 'Derniers plannings'
+    comments: null
+    date_added: '1306496515'
+    date_modified: '1306497516'
+    author: stephane
+    translated: true
+  TransUnit_54:
+    Catalogue: Catalogue_3
+    id: '21'
+    source: 'There is no new planner.'
+    target: 'Il n''y a pas de nouveau planning.'
+    comments: null
+    date_added: '1306496515'
+    date_modified: '1306497525'
+    author: stephane
+    translated: true
+  TransUnit_55:
+    Catalogue: Catalogue_3
+    id: '22'
+    source: 'New comments'
+    target: 'Nouveaux commentaires'
+    comments: null
+    date_added: '1306496515'
+    date_modified: '1306497531'
+    author: stephane
+    translated: true
+  TransUnit_56:
+    Catalogue: Catalogue_3
+    id: '23'
+    source: 'There is no new comment.'
+    target: 'Il n''y a pas de nouveau commentaire'
+    comments: null
+    date_added: '1306496515'
+    date_modified: '1306497538'
+    author: stephane
+    translated: true
+  TransUnit_57:
+    Catalogue: Catalogue_1
+    id: '17'
+    source: 'Stag - Manager'
+    target: 'Stag - Gestion'
+    comments: null
+    date_added: '1306496515'
+    date_modified: '1306497544'
+    author: stephane
+    translated: true
+  TransUnit_58:
+    Catalogue: Catalogue_3
+    id: '24'
+    source: 'List of languages'
+    target: 'Liste des langues'
+    comments: null
+    date_added: '1306496518'
+    date_modified: '1306497548'
+    author: stephane
+    translated: true
+  TransUnit_59:
+    Catalogue: Catalogue_1
+    id: '18'
+    source: 'Admin langues List'
+    target: 'Administration de la liste des langues'
+    comments: null
+    date_added: '1306496518'
+    date_modified: '1306497577'
+    author: stephane
+    translated: true
+  TransUnit_60:
+    Catalogue: Catalogue_1
+    id: '19'
+    source: Iso
+    target: Iso
+    comments: null
+    date_added: '1306496518'
+    date_modified: '1306497582'
+    author: stephane
+    translated: true
+  TransUnit_61:
+    Catalogue: Catalogue_1
+    id: '20'
+    source: Country
+    target: Pays
+    comments: null
+    date_added: '1306496518'
+    date_modified: '1306497591'
+    author: stephane
+    translated: true
+  TransUnit_62:
+    Catalogue: Catalogue_1
+    id: '21'
+    source: 'ADMIN &gt; Categories - Royal Hotel - Manager'
+    target: null
+    comments: null
+    date_added: '1306497616'
+    date_modified: null
+    author: null
+    translated: false

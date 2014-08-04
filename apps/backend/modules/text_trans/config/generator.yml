@@ -1,0 +1,24 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           transUnit
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          text_trans
+    with_doctrine_route:     1
+    css:                   nothing
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        display: [catalogue, =source, _ajax_target, translated]
+      filter: ~
+      form:
+        display:
+          translation: [cat_id, source, target]
+      edit:    ~
+      new:     ~

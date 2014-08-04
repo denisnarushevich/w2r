@@ -1,0 +1,161 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  sf_guard_plugin:
+    remember_cookie_name:   stagRememberMe
+  ckeditor:
+    basePath:         '/js/ckeditor/'
+  ckfinder:
+    basePath:         '/js/ckfinder/'
+    active:           true
+  sf_admin_dash:
+    site:         'Stag Site'
+    categories:
+      Global view:
+        credentials:  [[Administrator, Contents, Customer services, Planning manager, Guides]]
+        items:
+          Panel:
+            url:  'homepage/index'
+            image: cpanel.png
+            credentials:  [[Administrator, Contents]]
+          Planner:
+            url:  'planner/index'
+            image: templatemanager.png
+            credentials:  [[Administrator, Contents, Customer services, Planning manager, Guides]]
+          Comments:
+            url:  'comments/index'
+            image: addedit.png
+            credentials:  [[Administrator, Contents]]
+          Reviews:
+            url:  'reviews/index'
+            image: addedit.png
+            credentials:  [[Administrator, Contents]]
+          Contact:
+            url:  'contacts/index'
+            image: addedit.png
+            credentials:  [[Administrator, Contents]]
+      Homepage:
+        credentials:  [[Administrator, Contents]]
+        items:
+          Slider:
+            url: 'slider/index'
+            image: mediamanager.png
+            credentials:  [[Administrator, Contents]]
+          Highlight Activities:
+            url: 'hlhomeactivities/index'
+            image: module.png
+            credentials:  [[Administrator, Contents]]
+          Highlight Footer:
+            url: 'hlhomefooter/index'
+            image: generic.png
+            credentials:  [[Administrator, Contents]]
+          Video Block:
+            url: 'homevideo/index'
+            image: browser.png
+            credentials:  [[Administrator, Contents]]
+      Contents:
+        credentials:  [[Administrator, Contents]]
+        items:
+          Categories:
+            url: activity_category
+            image: menu.png
+            credentials:  [[Administrator, Contents]]
+          Activities:
+            url: activity
+            image: sections.png
+            credentials:  [[Administrator, Contents]]
+          Specific Price:
+            url: activity_price
+            image: sections.png
+            credentials:  [[Administrator, Contents]]
+      Extras:
+        credentials:  [[Administrator, Contents]]
+        items:
+          Extras categories:
+            url: extra_category
+            image: credits.png
+            credentials:  [[Administrator, Contents]]
+          Extras:
+            url: extra
+            image: credits.png
+            credentials:  [[Administrator, Contents]]
+      Users Management:
+        credentials:  [[Administrator, Contents, Customer services]]
+        items:
+          Customers:
+            url: client
+            image: users.png
+            credentials:  [[Administrator, Contents, Customer services]]
+          Cards:
+            url: card
+            image: generic.png
+            credentials:  [[Administrator, Contents, Customer services]]
+      Scheduled Planners:
+        credentials:  [[Administrator, Contents, Customer services, Planning manager]]
+        items:
+          Planners:
+            url: planner_admin_planner
+            image: calendar.png
+            credentials:  [[Administrator, Contents, Customer services, Planning manager]]
+          Activity Booking:
+            url: booking
+            image: calendar.png
+            credentials:  [[Administrator, Contents, Customer services, Planning manager]]
+      Partners & Bonus:
+        credentials:  [[Administrator, Contents]]
+        items:
+          Partners:
+            url: partners
+            credentials: [[Administrator, Contents]]
+          Bonus:
+            url: bonus_partner
+            credentials: [[Administrator, Contents]]
+      Management:
+        credentials:  [[Administrator, Contents]]
+        items:
+          Languages:
+            url: text_langues
+            image: language.png
+            credentials:  [[Administrator]]
+          Moneys:
+            url: money
+            image: argent.png
+            credentials:  [[Administrator]]
+          Translations:
+            url: text_trans
+            image: language.png
+            credentials:  [[Administrator, Contents]]
+          Sites Informations:
+            url: informations
+            image: systeminfo.png
+            credentials:  [[Administrator, Contents]]
+          FAQ:
+            url: lexique
+            image: faq.png
+            credentials:  [[Administrator, Contents]]
+          About us:
+            url: about
+            image: credits.png
+            credentials:  [[Administrator, Contents]]
+          Terms:
+            url: terms
+            image: trash.png
+            credentials:  [[Administrator, Contents]]
+      Employees Management:
+        credentials:  [[Administrator]]
+        items:
+          Employees:
+            url: sfGuardUser/index
+            image: support.png
+            credentials:  [[Administrator]]
+          Group of employees:
+            url: sfGuardGroup/index
+            image: users.png
+            credentials:  [[Administrator]]
+          Permissions:
+            url: sfGuardPermission/index
+            image: query.png
+            credentials:  [[Administrator]]
+
