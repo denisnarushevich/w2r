@@ -1,0 +1,207 @@
+#about {
+	padding: 16px 22px 20px 22px;
+}
+
+#about h1 {
+	color: #444;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: arial;
+}
+
+#about .uveContactedUs {
+	margin-top: 10px;
+	color: #444;
+}
+
+#about .uveContactedUs * {
+	color: inherit;
+}
+
+#about .uveContactedUs a {
+	text-decoration: underline;
+}
+
+#about > .columns {
+	overflow: auto;
+}
+
+
+
+
+
+#about > .columns > .left {
+	float: left;
+
+	width: 530px;
+}
+
+#about > .columns > .left > .text {
+	color: #444;
+	margin-top: 10px;
+}
+
+#about > .columns > .left > .text * {
+	color: inherit;
+}
+
+#about > .columns > .left > .text a {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+#about > .columns > .right {
+	float: right;
+	width: 270px;
+}
+
+#about > .columns > .right > div.mustLogin {
+	margin: 10px 0px 0px 0px;
+	color: #444;
+	text-align: center;
+}
+
+#about > .columns > .right > .form {
+	width: 270px;
+}
+
+#about > .columns > .right > .form > form#newReview {
+	display: block;
+}
+
+form#newReview .label {
+	margin: 10px 0px 0px 0px;
+	color: #444;
+	font-size: 14px;
+	overflow: auto;
+}
+
+form#newReview .label > span.error {
+	color: red;
+	font-size: 12px;
+	font-size: 14px;
+	float: right;
+}
+
+form#newReview .field, #recaptcha_response_field {
+	display:block;
+	
+	color: #444;
+	
+	padding: 4px;
+	
+	width: 260px;
+	
+	font-size: 12px;
+	color: #444;
+	border: 1px solid #bebebe;
+	border-radius: 4px;
+	
+	background-color: #f6f6f6;
+	
+	transition: all .6s;
+	-moz-transition: all .6s; /* Firefox 4 */
+	-webkit-transition: all .6s; /* Safari and Chrome */
+	-o-transition: all .6s; /* Opera */
+	
+	box-shadow: inset 0 0 7px #ddd;
+}
+
+form#newReview #recaptcha_widget {
+}
+
+form#newReview #recaptcha_widget span {
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #444;
+}
+
+form#newReview #recaptcha_image {
+	width: 268px !important;
+	border: 1px solid #bebebe;
+	border-radius: 4px;
+	padding: 4px 0px;
+}
+
+form#newReview #recaptcha_image > img {
+	width: 260px !important;
+	margin: 0 auto;
+}
+
+form#newReview .field:focus,
+form#newReview .field:hover,
+#recaptcha_response_field:focus,
+#recaptcha_response_field:hover {
+	border-color: #66309b;
+	background-color: #fff;
+	
+	transition: all .3s;
+	-moz-transition: all .3s; /* Firefox 4 */
+	-webkit-transition: all .3s; /* Safari and Chrome */
+	-o-transition: all .3s; /* Opera */
+}
+
+form#newReview textarea.field {
+	height: 80px;
+}
+
+form#newReview input.field, #recaptcha_response_field {
+	font-size: 12px;
+	color: #444;
+	width: 260px;
+	height: 18px;
+}
+
+form#newReview select.field {
+	width: 270px;
+	height: 31px;
+	line-height: 31px;
+}
+
+form#newReview select.field > option {
+	color: #444;
+}
+
+form#newReview > div.submitContainer {
+	margin-top: 10px;
+	overflow: auto;
+}
+
+form#newReview > div.submitContainer > input {
+	float: right;
+	
+	display: block;
+	
+	padding: 6px 8px;
+	background-color: #bebebe;
+	
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #fff;
+	
+	cursor: pointer;
+	
+	transition: all .6s;
+	-moz-transition: all .6s; /* Firefox 4 */
+	-webkit-transition: all .6s; /* Safari and Chrome */
+	-o-transition: all .6s; /* Opera */
+}
+
+form#newReview > div.submitContainer > input:hover {
+	background-color: #66309b;
+	
+	transition: all .3s;
+	-moz-transition: all .3s; /* Firefox 4 */
+	-webkit-transition: all .3s; /* Safari and Chrome */
+	-o-transition: all .3s; /* Opera */
+}

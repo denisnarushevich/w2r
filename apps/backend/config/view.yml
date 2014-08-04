@@ -1,0 +1,21 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+#  stylesheets:    [reset.css, style.css, invalid.css, adminGenerator.css, zoombox.css]
+  stylesheets:    [fonts.css, adminGenerator.css, zoombox.css, jquery-ui-1.8.13.custom.css]
+
+  javascripts:    [jquery-1.5.2.min.js, jquery-ui-1.8.13.custom.min.js, zoombox.js, simpla.jquery.configuration.js, facebox.js, jquery.wysiwyg.js, jquery.datePicker.js, jquery.date.js, myzoombox.js, ckeditor/ckeditor.js, ckfinder/ckfinder.js]
+
+  has_layout:     true
+  layout:         layout

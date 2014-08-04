@@ -1,0 +1,96 @@
+#register {
+	padding: 16px 22px 40px 22px;
+}
+
+#register h1 {
+	color: #444;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: arial;
+}
+
+#register #registerForm {
+	display: block;
+	margin: 0 auto;
+}
+
+#register .field {
+	margin-top: 30px;
+	
+	overflow: auto;
+}
+
+#register .field > div {
+	float: left;
+	height: 33px;
+	width: 300px;
+	text-align: right;
+}
+
+#register .field > div * {
+	line-height: 33px;
+	font-size: 16px;
+}
+
+#register .field > div > span.label {
+	color: #444;
+}
+
+#register .field > div > span.error {
+	color: red;
+}
+
+#register .field > input {
+	float: right;
+	
+	display:block;
+		
+	width: 320px;
+	height: 31px;
+	padding: 0px 4px;
+	
+	margin-right: 160px;
+	
+	border: 1px solid #bebebe;
+	border-radius: 4px;
+	
+	background-color: #f6f6f6;
+	
+	color: #444;
+	font-size: 14px;
+	
+	transition: all .6s;
+	-moz-transition: all .6s; /* Firefox 4 */
+	-webkit-transition: all .6s; /* Safari and Chrome */
+	-o-transition: all .6s; /* Opera */
+	
+	box-shadow: inset 0 0 7px #ddd;
+}
+
+#register .field > input[type="submit"] {
+	width: 330px;
+	background-color: #bebebe;
+
+	border-color: #bebebe;
+	color: #fff;
+	box-shadow: inset 0 0 16px #bebebe;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#register .field > input:focus,
+#register .field > input:hover {
+	border-color: #66309b;
+	background-color: #fff;
+	
+	transition: all .3s;
+	-moz-transition: all .3s; /* Firefox 4 */
+	-webkit-transition: all .3s; /* Safari and Chrome */
+	-o-transition: all .3s; /* Opera */
+}
+
+#register .field > input[type="submit"]:hover {
+	border-color: #66309b;	
+	background-color: #66309b;
+	box-shadow: inset 0 0 8px #66309b;
+}

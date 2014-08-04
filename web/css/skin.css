@@ -1,0 +1,23 @@
+/*Color Style*/
+h1 *, #web, h2, h2 *, h3, h3 *, h4, #claim, #tabs li a, #submit input {
+	font-family: 'Lobster', arial, serif;
+}
+h2 span, h3 span, a, #tabs li a:hover, #tabs li.active a, #tabs li.active a:hover {
+	color: #346f9d;
+}
+#tab_container div ul li a:hover, #tab_container div ul li a:hover span {
+	background-color: #346f9d;
+}
+a.cta, #tab_container div ul li a span {
+	color: #b99021;
+}
+#footer a {
+	color: #709dbe;
+}
+/*Background Style*/
+#header {
+	background: #262c31 url(../images/header-blue.png) repeat-x left bottom;
+}
+#footer {
+	background: #262c31 url(../images/footer-blue.png) repeat-x left top;
+}

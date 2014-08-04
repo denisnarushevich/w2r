@@ -1,0 +1,72 @@
+#offers {
+	padding: 16px 22px 0px 22px;
+}
+
+#offers > h1 {
+	color: #444;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: arial;
+}
+
+#offers > .categoriesContainer {
+	overflow: auto;
+	margin: 0px -16px;
+}
+
+#offers .categoryBox {
+	float: left;
+	
+	width: 253px;
+	height: 410px;
+	overflow: hidden;
+	
+	margin: 16px;
+}
+
+#offers .categoryBox > a {
+	display: block;
+	border: 1px solid #cacaca;
+	padding: 4px;
+	
+	transition: all .6s;
+	-moz-transition: all .6s; /* Firefox 4 */
+	-webkit-transition: all .6s; /* Safari and Chrome */
+	-o-transition: all .6s; /* Opera */
+}
+
+#offers .categoryBox > a:hover {
+	background-color: #66309b;
+	border-color: #66309b;
+	
+	transition: all .3s;
+	-moz-transition: all .3s; /* Firefox 4 */
+	-webkit-transition: all .3s; /* Safari and Chrome */
+	-o-transition: all .3s; /* Opera */
+}
+
+#offers .categoryBox > a > img {
+	display: block;
+	width: 243px;
+	height: 178px;
+}
+
+#offers .categoryBox > h2 {
+	margin-top: 12px;
+}
+
+#offers .categoryBox > h2 > span {
+	padding: 4px 10px;
+	background-color: #66309b;
+	
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#offers .categoryBox > p {
+	margin-top: 8px;
+	color: #444;
+	font-size: 12px;
+}
+

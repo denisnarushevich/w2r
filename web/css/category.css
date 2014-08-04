@@ -1,0 +1,195 @@
+#category {
+	padding: 16px 22px 0px 22px;
+}
+
+#category h1 {
+	color: #444;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: arial;
+}
+
+#category > .columns {
+	overflow: auto;
+}
+
+
+
+
+
+#category > .columns > .left {
+	float: left;
+
+	width: 530px;
+}
+	
+#category > .columns > .left > .description {
+	margin-top: 20px;
+	overflow: auto;
+}
+
+#category > .columns > .left > .description > img {
+	display: block;
+	
+	float: left;
+	
+	width: 245px;
+	height: 178px;
+	padding: 5px;
+	
+	background-color: #66309b;
+}
+
+#category > .columns > .left > .description > .textBox {
+	float: right;
+	
+	width: 256px;
+}
+
+#category > .columns > .left > .description > .textBox > h2 {
+	color: #66309b;
+	font-size: 16px;
+}
+
+#category > .columns > .left > .description > .textBox > p {
+	margin-top: 8px;
+	
+	color: #444;
+	font-size: 14px;
+	text-align: justify;
+}
+
+
+
+
+
+#category > .columns > .right {
+	float: right;
+	width: 270px;
+}
+
+#category > .columns > .right > .other {
+	margin-top: 20px;
+}
+
+#category > .columns > .right > .other > a {
+	display: block;
+	
+	margin-bottom: 8px;
+}
+
+#category > .columns > .right > .other > a > span {
+	padding: 4px 10px;
+	background-color: #66309b;
+	
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#category > .columns > .right > .other > a:hover > span {
+	text-decoration: underline;
+	background-color: transparent;
+	color: #66309b;
+}
+
+
+
+
+#category > .activities > .activitiesContainer {
+	overflow: auto;
+	margin: 0px -14px 0px -15px;
+	padding-bottom: 20px;
+}
+
+#category .activitiesContainer > a.activityBox {
+	float: left;
+	
+	display: block;
+	
+	width: 265px;
+	height: 188px;
+	
+	margin: 24px 9px 0px 10px;
+	
+	position: relative;
+}
+
+#category .activitiesContainer > a.activityBox > img {
+	display: block;
+	width: 245px;
+	height: 178px;
+	padding: 4px;
+	margin: 0px 5px;
+	background-color: #fff;
+	border: 1px solid #cacaca;
+	
+	transition: all .6s;
+	-moz-transition: all .6s; /* Firefox 4 */
+	-webkit-transition: all .6s; /* Safari and Chrome */
+	-o-transition: all .6s; /* Opera */
+}
+
+#category .activitiesContainer > a.activityBox:hover > img {
+	background-color: #cf332e;
+	border-color: #cf332e;
+	
+	transition: all .3s;
+	-moz-transition: all .3s; /* Firefox 4 */
+	-webkit-transition: all .3s; /* Safari and Chrome */
+	-o-transition: all .3s; /* Opera */
+}
+
+#category .activitiesContainer > a.activityBox > .labelBox {
+	position: absolute;
+	left: 0px;
+	bottom: 8px;
+	
+	width: 245px;
+	height: 47px;
+	
+	padding: 0px 10px;
+	
+	background-image: url('../images/white-label-box.png');
+	
+	text-align: right;
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #7c7c7c;
+	
+	transition: all .6s;
+	-moz-transition: all .6s; /* Firefox 4 */
+	-webkit-transition: all .6s; /* Safari and Chrome */
+	-o-transition: all .6s; /* Opera */
+}
+
+#category .activitiesContainer > a.activityBox:hover > .labelBox {
+	color: #cf332e;
+	
+	transition: all .3s;
+	-moz-transition: all .3s; /* Firefox 4 */
+	-webkit-transition: all .3s; /* Safari and Chrome */
+	-o-transition: all .3s; /* Opera */
+}
+
+#category .activitiesContainer > a.activityBox > .price {
+	position: absolute;
+	right: 12px;
+	bottom: 55px;
+	
+	width: 82px;
+	height: 32px;
+	
+	padding-top: 4px;
+	
+	background: url('../images/price_bg.png') right top no-repeat;
+	
+	font-weight: bold;
+	font-style: italic;
+	font-size: 18px;
+	line-height: 36px;
+	text-shadow: -1px 1px 0px #333;
+	text-align: center;
+}
+

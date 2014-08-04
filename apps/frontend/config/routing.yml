@@ -1,0 +1,53 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+homepage:
+  url:      /
+  param:    { module: homepage, action: index }
+
+category:
+  class:    sfDoctrineRoute
+  url:      /:sf_culture/cat/:slug.:sf_format
+  options:  { model: ActivityCategory, type: object }
+  param:    { module: category, action: index, sf_format: html }
+
+activity:
+  class:    sfDoctrineRoute
+  url:      /:sf_culture/act/:slug.:sf_format
+  options:  { model: Activity, type: object }
+  param:    { module: activity, action: index, sf_format: html }
+  requirements:
+    sf_method: [get, post]
+
+added:
+  url:      /:sf_culture/added.:sf_format
+  param:    { module: checkout, action: added, sf_format: html }
+
+page:
+  url:      /:sf_culture/:page.:sf_format
+  param:    { module: pages, action: index, sf_format: html }
+
+checkbonuscode:
+  url:      /checkbonuscode.:sf_format
+  param:    { module: checkout, action: checkbonuscode, sf_format: html }
+
+addcart:
+  url:      /addtocart.:sf_format
+  param:    { module: cart, action: add, sf_format: html }
+
+removecart:
+  url:      /removefromcart.:sf_format
+  param:    { module: cart, action: remove, sf_format: html }
+
+# Change culture
+culture:
+  url:      /change/langue/:iso
+  param:    { module: common, action: change }
+
+# default rules
+default_index:
+  url:      /:module
+  param:    { action: index }
+
+default:
+  url:      /:module/:action/*

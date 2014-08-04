@@ -1,0 +1,3 @@
+all:
+  stylesheets:    [homepage.css]
+  javascripts:    [slider.js]

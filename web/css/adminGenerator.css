@@ -1,0 +1,242 @@
+/* 
+    Document   : adminGenerator
+    Created on : 26 mai 2011, 17:19:13
+    Author     : rainmaker01
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.column-left {
+  width: 48%;
+  float: left;
+  position: relative;
+}
+                
+.column-right {
+  width: 48%;
+  float: right;
+  position: relative;
+}
+
+.content-box {
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.content-box-header {
+  background: #e5e5e5 url('../images/bg-content-box.gif') top left repeat-x;
+  margin-top: 1px;
+  height: 40px;
+}
+
+.content-box-header h3 {
+  padding: 12px 15px 10px;
+  float: left;
+}
+
+.content-box-content {
+    padding: 20px;
+    font-size: 13px;
+    border-top: 1px solid #ccc;
+}
+
+.content-box-header {
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+ul.content-box-tabs li a.current {
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#sf_admin_theme_footer {
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    background:#ddd;
+    bottom:0;
+    position:fixed;
+    width:100%;
+    z-index:1000;
+}
+
+#sf_admin_content {
+    padding-bottom: 40px;
+}
+
+.body_content_with_footer {
+    padding-bottom: 40px;
+}
+
+/*Main*/
+.vbox {
+    float: left;
+    width: 400px;
+    height: 100%;
+    position: relative;
+    padding: 0 28px 15px 0;
+    margin: 0 26px 0 1px;
+    background: url(../images/divider-vertical.png) repeat-y right top;
+}
+
+.vbox h2, .vbox p {
+    padding: 0 10px;
+}
+.vbox p, .vboxSmall p {
+    margin-top: 1em;
+}
+.vbox p a, .vboxSmall p a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#main {
+    clear: both;
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.vbox h2 .blue_h2 {
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #fff;
+    color: #346F9D;
+}
+
+.vbox h2 {
+    font-family: "Lobster", Arial, Sans-Serif;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px white;
+}
+
+.container {
+/*	width: 950px;*/
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+}
+
+#main h1 {
+    
+}
+
+
+/* Autocomplete */
+.ac_results {
+	padding: 0px;
+	border: 1px solid black;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 12px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+}
+
+.ac_loading {
+	background: white url('indicator.gif') right center no-repeat;
+}
+
+.ac_odd {
+	background-color: #eee;
+}
+
+.ac_over {
+	background-color: #0A246A;
+	color: white;
+}
+
+#tabs {
+    height: 780px;
+}
+
+.action_up {
+    background:url(/images/arrow-up-2.png) no-repeat 0 0;
+    padding-left: 20px;
+}
+
+.action_down {
+    background:url(/images/arrow-down-2.png) no-repeat 0 0;
+    padding-left: 20px;
+}
+
+.action_first {
+    background:url(/images/arrow-up-double-2.png) no-repeat 0 0;
+    padding-left: 20px;
+}
+
+.action_last {
+    background:url(/images/arrow-down-double-2.png) no-repeat 0 0;
+    padding-left: 20px;
+}
+
+.action_edit {
+    background:url(/images/edit.png) no-repeat 0 0;
+    padding-left: 20px;
+}
+
+.sf_admin_action_delete a {
+    background:url(/images/delete.png) no-repeat 0 0;
+    padding-left: 20px;
+}
+
+.action_activate {
+    background:url(/images/tick.png) no-repeat 0 0;
+    padding-left: 20px;
+}
+
+.action_deactivate {
+    background:url(/images/delete.png) no-repeat 0 0;
+    padding-left: 20px;
+}
+
+.tab_slide {
+    width: 80%;
+    text-align: center;
+}
+
+.tab_slide thead tr, .tab_slide tfoot tr {
+    background: url(/sfAdminDashPlugin/images/background.jpg);
+}
+
+.tab_slide th, .tab_slide td {
+    text-align: center;
+}
+
+ul.sf_admin_td_actions, ul.sf_admin_td_actions li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline;
+}

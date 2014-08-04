@@ -1,0 +1,10 @@
+indexSuccess:
+  javascripts: [fullcalendar/fullcalendar.min.js, fullcalendar/planner.js, myzoombox.js, zoombox.js]
+  stylesheets: [fullcalendar.css, fullcalendar.print.css, zoombox.css]
+  metas:
+    title: Stag - Planner
+    
+viewSuccess:
+  has_layout: false
+  javascripts: [fullcalendar/fullcalendar.min.js]
+  stylesheets: [fullcalendar.css, fullcalendar.print.css]
